@@ -126,3 +126,25 @@ for(let i= 1; i <=2; i++){
     console.log(`timmy works out ${i} times`)
 }
 
+class Dinner{
+constructor(appetizer, entree, dessert){
+    this.appetizer= appetizer;
+    this.entree = entree;
+    this.dessert = dessert;
+    }
+}
+
+class Chef{
+    
+cookingUp(appetizer,entree,dessert){
+const dinner = new Dinner(appetizer, entree, dessert)
+console.log(dinner)
+}
+
+}
+
+const chefj = new Chef("fries", "pizza", "milkshake")
+console.log(chefj.cookingUp("fries", "pizza","milk"))
+
+chefj.cookingUp("spaghet","ramen","icecream")
+chefj.cookingUp("milk", "cereal", "water")
