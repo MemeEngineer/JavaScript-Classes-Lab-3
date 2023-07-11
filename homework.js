@@ -61,8 +61,8 @@ class Person {
         this.weight--
         console.log(this.weight)
     }
-    ageUp(){
-        this.age++
+    ageUp(num){
+        this.age +=  num
         this.height++
         this.weight++
         this.mood--
@@ -93,3 +93,36 @@ console.log(bob.eat())
 console.log(bob.exercise())
 console.log(bob.ageUp())
 console.log(bob.buyHamster(hammy))
+
+const timmy = new Person( 'timmy', 20,60,180,10,['mouse'],100 )
+
+timmy.ageUp(5)
+
+for(let i=1; i <= 5; i++){
+timmy.eat()
+console.log(`Eating ${i} time `)
+}
+
+for(let i=1; i <= 5; i++){
+timmy.exercise()
+console.log(`working out ${i} times `)
+}
+
+timmy.ageUp(9)
+
+const gus = new Hamster("Timmy", "Gus", 20)
+
+timmy.buyHamster(gus)
+
+timmy.ageUp(15)
+
+for( let i = 1; i <= 2; i++){
+    timmy.eat()
+    console.log(`timmy eats ${i} times`)
+}
+
+for(let i= 1; i <=2; i++){
+    timmy.exercise()
+    console.log(`timmy works out ${i} times`)
+}
+
